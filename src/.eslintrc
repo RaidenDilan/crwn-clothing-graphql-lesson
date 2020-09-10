@@ -1,0 +1,232 @@
+{
+  "settings": {
+    "react": {
+      "version": "detect",
+    }
+  },
+  "extends": [
+    "react-app",
+    "plugin:react/recommended"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "ignorePatterns": [
+    "/node_modules/**",
+    "/build/**"
+  ],
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "rules": {
+    "indent": [
+      1,
+      2,
+      {
+        "SwitchCase": 1,
+        "VariableDeclarator": 1,
+        "MemberExpression": 1
+      }
+    ],
+    "linebreak-style": [
+      "error",
+      "unix"
+    ],
+    "quotes": [
+      "error",
+      "single"
+    ],
+    "semi": [
+      "error",
+      "always"
+    ],
+    "getter-return": [
+      "off"
+    ],
+    "default-case": [
+      1,
+      {
+        "commentPattern": "^skip\\sdefault"
+      }
+    ],
+    // "semi": [0, "never"],
+    // "class-methods-use-this": ["error", {
+    //   exceptMethods: [
+    //     "render",
+    //     "getInitialState",
+    //     "getDefaultProps",
+    //     "getChildContext",
+    //     "componentWillMount",
+    //     "componentDidMount",
+    //     "componentWillReceiveProps",
+    //     "shouldComponentUpdate",
+    //     "componentWillUpdate",
+    //     "componentDidUpdate",
+    //     "componentWillUnmount",
+    //   ],
+    // }],
+    // "no-undef": ["error"],
+    "no-unused-vars": [
+      "warn",
+      {
+        "args": "none",
+        "argsIgnorePattern": "req|res|next|val"
+      }
+      // 1,
+      // {
+      //   "vars": "all",
+      //   "args": "after-used",
+      //   "ignoreRestSiblings": false
+      // }
+    ],
+    // "no-case-declarations": [
+    //   1
+    // ],
+    // "no-return-assign": [
+    //   1
+    // ],
+    // "no-param-reassign": [
+    //   1
+    // ],
+    // "no-shadow": [
+    //   1
+    // ],
+    // "no-console": "off",
+    // "camelcase": [
+    //   1
+    // ],
+    // "no-underscore-dangle": [
+    //   0,
+    //   "always"
+    // ],
+    "jsx-quotes": [
+      "error",
+      "prefer-single"
+    ],
+    "space-in-parens": [
+      1,
+      "never"
+    ],
+    "template-curly-spacing": [
+      1,
+      "always"
+    ],
+    "array-bracket-spacing": [
+      1,
+      "never"
+    ],
+    "object-curly-spacing": [
+      1,
+      "always"
+    ],
+    // "computed-property-spacing": [
+    //   1,
+    //   "always"
+    // ],
+    // "no-multiple-empty-lines": [
+    //   2,
+    //   {
+    //     "max": 1,
+    //     "maxEOF": 0,
+    //     "maxBOF": 0
+    //   }
+    // ],
+    // "quotes": [
+    //   1,
+    //   "single",
+    //   "avoid-escape"
+    // ],
+    // "no-use-before-define": [
+    //   2,
+    //   {
+    //     "functions": false
+    //   }
+    // ],
+    // "prefer-const": 1,
+    // "jsx-a11y/href-no-hash": "off",
+    // "jsx-a11y/no-onchange": "off",
+    // "jsx-a11y/click-events-have-key-events": "off",
+    // "jsx-a11y/no-noninteractive-element-interactions": "off",
+    // "jsx-a11y/label-has-for": "off",
+    // "jsx-a11y/anchor-is-valid": [
+    //   1,
+    //   {
+    //     "aspects": [
+    //       "invalidHref"
+    //     ]
+    //   }
+    // ],
+    // "react/prefer-es6-class": 0,
+    // "react/jsx-space-before-closing": "error",
+    // "react/jsx-indent": [
+    //   1,
+    //   2
+    // ],
+    "react/no-unescaped-entities": 0,
+    "react/jsx-closing-bracket-location": [
+      1,
+      {
+        "selfClosing": "after-props",
+        // "selfClosing": 'props-aligned',
+        "nonEmpty": "after-props"
+      }
+    ],
+    "react/display-name": 0,
+    "react/jsx-indent": [
+      1,
+      2
+    ],
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [
+          ".js",
+          ".jsx"
+        ]
+      }
+    ],
+    "react/jsx-indent-props": [
+      "error",
+      2
+    ],
+    "react/jsx-curly-spacing": [
+      1,
+      {
+        "when": "always",
+        "attributes": {
+          "allowMultiline": true
+        },
+        "children": true
+      }
+    ],
+    "react/jsx-tag-spacing": [
+      1,
+      {
+        "beforeSelfClosing": "always"
+      }
+    ],
+    // "react/jsx-closing-bracket-location": [1, {
+    //   "selfClosing": "tag-aligned",
+    //   "nonEmpty": "tag-aligned"
+    // }],
+    "react/jsx-max-props-per-line": [
+      1,
+      {
+        "maximum": 1
+      }
+    ],
+    "react/jsx-first-prop-new-line": [
+      1,
+      "multiline"
+    ],
+    "react/prop-types": 0
+    // "react/no-array-index-key": [1],
+    // "react/jsx-no-undef": [2, { "allowGlobals": true }],
+  }
+}
