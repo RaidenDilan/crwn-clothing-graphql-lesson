@@ -1,7 +1,7 @@
 {
   "settings": {
     "react": {
-      "version": "detect",
+      "version": "detect"
     }
   },
   "extends": [
@@ -72,6 +72,16 @@
     //   ],
     // }],
     // "no-undef": ["error"],
+    "comma-dangle": [
+      "error",
+      {
+        "arrays": "never",
+        "objects": "never",
+        "imports": "never",
+        "exports": "never",
+        "functions": "never"
+      }
+    ],
     "no-unused-vars": [
       "warn",
       {
