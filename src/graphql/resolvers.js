@@ -2,13 +2,13 @@ import { gql } from 'apollo-boost';
 
 export const typeDefs = gql`
   extend type Mutation {
-    ToggleCartHidden: Bollean!
+    toggleCartHidden: Boolean!
   }
 `;
 
 export const GET_CART_HIDDEN = gql`
   {
-    cartHidden: @client
+    cartHidden @client
   }
 `;
 
