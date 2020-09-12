@@ -8,7 +8,7 @@ export const typeDefs = gql`
 
   extend type Mutation {
     ToggleCartHidden: Boolean!
-    AddItemToCart(item: Item!): [item]!
+    AddItemToCart(item: Item!): [Item]!
   }
 `;
 

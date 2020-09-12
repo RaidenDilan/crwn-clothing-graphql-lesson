@@ -22,10 +22,11 @@ const CartDropdownContainer = () => (
       toggleCartHidden => (
         <Query query={ GET_CART_ITEMS }>
           {
-            ({ data : { cartItems } }) => (
+            ({ data: { cartItems } }) => (
               <CartDropdown
                 cartItems={ cartItems }
-                toggleCartHidden={ toggleCartHidden } />
+                toggleCartHidden={ toggleCartHidden }
+              />
             )
           }
         </Query>

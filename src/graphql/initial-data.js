@@ -1,6 +1,6 @@
 const INITIAL_DATA = {
   cartHidden: true,
-  cartItem: []
+  cartItems: []
 };
 
 export default INITIAL_DATA;
