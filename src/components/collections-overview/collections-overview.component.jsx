@@ -9,7 +9,8 @@ const CollectionsOverview = ({ collections }) => (
     { collections.map(({ id, ...otherCollectionProps }) => (
       <CollectionPreview
         key={ id }
-        { ...otherCollectionProps } />
+        { ...otherCollectionProps }
+      />
     )) }
   </div>
 );

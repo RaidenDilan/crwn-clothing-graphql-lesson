@@ -21,7 +21,8 @@ const StripeCheckoutButton = ({ price }) => {
       amount={ priceForStripe }
       panelLabel='Pay Now'
       token={ onToken }
-      stripeKey={ publishableKey } />
+      stripeKey={ publishableKey }
+    />
   );
 };
 

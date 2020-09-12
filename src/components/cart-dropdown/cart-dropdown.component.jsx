@@ -13,7 +13,8 @@ const CartDropdown = ({ cartItems, history, toggleCartHidden }) => (
         cartItems.map(cartItem => (
           <CartItem
             key={ cartItem.id }
-            item={ cartItem } />
+            item={ cartItem }
+          />
         ))
       ) : (
         <span className='empty-message'>Your cart is empty</span>

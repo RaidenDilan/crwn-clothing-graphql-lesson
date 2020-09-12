@@ -9,10 +9,12 @@ const ShopPage = ({ match }) => (
     <Route
       exact
       path={ `${ match.path }` }
-      component={ CollectionsOverview } />
+      component={ CollectionsOverview }
+    />
     <Route
       path={ `${ match.path }/:collectionId` }
-      component={ CollectionPage } />
+      component={ CollectionPage }
+    />
   </div>
 );
 
