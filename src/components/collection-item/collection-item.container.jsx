@@ -19,8 +19,10 @@ const CollectionItemContainer = props => (
           addItem={ item => addItemToCart({ variables: { item } }) }
         />
       )
+        
     }
   </Mutation>
-);
+)
+;
 
 export default CollectionItemContainer;

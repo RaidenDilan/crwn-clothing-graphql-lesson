@@ -35,25 +35,29 @@
       }
     ],
     "linebreak-style": [
-      "error",
+      1,
       "unix"
     ],
     "quotes": [
-      "error",
+      1,
       "single"
     ],
     "semi": [
-      "error",
+      2,
       "always"
     ],
     "getter-return": [
-      "off"
+      0
     ],
     "default-case": [
       1,
       {
         "commentPattern": "^skip\\sdefault"
       }
+    ],
+    "object-shorthand": [
+      1,
+      "always"
     ],
     // "semi": [0, "never"],
     // "class-methods-use-this": ["error", {
@@ -72,8 +76,15 @@
     //   ],
     // }],
     // "no-undef": ["error"],
+    "arrow-body-style": [
+      1,
+      "as-needed",
+      {
+        "requireReturnForObjectLiteral": true
+      }
+    ],
     "comma-dangle": [
-      "error",
+      2,
       {
         "arrays": "never",
         "objects": "never",
@@ -83,7 +94,7 @@
       }
     ],
     "no-unused-vars": [
-      "warn",
+      1,
       {
         "args": "none",
         "argsIgnorePattern": "req|res|next|val"
@@ -116,7 +127,7 @@
     //   "always"
     // ],
     "jsx-quotes": [
-      "error",
+      1,
       "prefer-single"
     ],
     "space-in-parens": [
@@ -203,7 +214,7 @@
       }
     ],
     "react/jsx-indent-props": [
-      "error",
+      1,
       2
     ],
     "react/jsx-curly-spacing": [

@@ -18,12 +18,13 @@ const GET_ITEM_COUNT = gql`
 
 const CartIconContainer = ({ data: { itemCount }, toggleCartHidden }) => (
   <CartIcon
-    toggleCartHidden={ toggleCartHidden }
     itemCount={ itemCount }
+    toggleCartHidden={ toggleCartHidden }
   />
 );
 
+
 export default compose(
-  graphql(TOGGLE_CART_HIDDEN, { name: 'toggleCartHidden' }),
-  graphql(GET_ITEM_COUNT)
+  graphql(GET_ITEM_COUNT),
+  graphql(TOGGLE_CART_HIDDEN, { name: 'toggleCartHidden' })
 )(CartIconContainer);

@@ -17,20 +17,20 @@ import App from './App';
 
 import { resolvers, typeDefs } from './graphql/resolvers';
 
-const httpLink = createHttpLink({
-  uri: 'https://crwn-clothing.com'
-});
+const link = createHttpLink({ uri: 'https://crwn-clothing.com' });
 
 const cache = new InMemoryCache();
 
 const client = new ApolloClient({
-  link: httpLink,
+  link,
   cache,
   typeDefs,
   resolvers
 });
 
 client.writeData({ data });
+
+// client.onResetStore(() => cache.writeData({ data }));
 
 ReactDOM.render(
   <ApolloProvider client={ client }>
