@@ -13,7 +13,7 @@ import { store, persistor } from './redux/store';
 import { default as data } from './graphql/initial-data';
 
 import './index.css';
-import App from './App';
+import { default as App } from './App/App.container';
 
 import { resolvers, typeDefs } from './graphql/resolvers';
 
